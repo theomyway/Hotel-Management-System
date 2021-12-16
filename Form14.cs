@@ -14,6 +14,7 @@ namespace Hotelmanagementsystem
 {
     public partial class Form14 : Form
     {
+        SqlConnection con = Form2.connectionstring;
         public Form14()
         {
             InitializeComponent();
@@ -26,7 +27,7 @@ namespace Hotelmanagementsystem
         public static int Room_number;
         public static int Rates;
 
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
         private bool IsValid()   //ENCAPSULATION
 
         {
@@ -285,6 +286,11 @@ namespace Hotelmanagementsystem
             Form18 f18 = new Form18();
             f18.ShowDialog();
             this.Close();
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

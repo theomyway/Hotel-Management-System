@@ -12,8 +12,10 @@ using System.Windows.Forms;
 
 namespace Hotelmanagementsystem
 {
+    
     public partial class Form15 : Form
     {
+        SqlConnection con = Form2.connectionstring;
         int HotelID = Form2.HotelID;
         string username = Form2.username;
         string hotelname = Form2.Hotelname;
@@ -26,7 +28,7 @@ namespace Hotelmanagementsystem
         public static int TotalDays;
         public static int Plan_rates;
         int RoomRates = Form14.Rates;
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
 
 
         public Form15()
@@ -247,6 +249,11 @@ namespace Hotelmanagementsystem
             Form18 f18 = new Form18();
             f18.ShowDialog();
             this.Close();
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void button1_MouseHover(object sender, EventArgs e)

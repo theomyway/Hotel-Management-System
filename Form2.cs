@@ -24,15 +24,19 @@ namespace Hotelmanagementsystem
         public static string Userlogin;
         public static string Passlogin;
         public static int HotelID;
-        
+        public static SqlConnection connectionstring;
         DataTable dt;
+        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
         
         public Form2()
         {
             InitializeComponent();
+            connectionstring = con;
+
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+       
+        
         private void btnexitform2_Click(object sender, EventArgs e)
         {
             Application.Exit();

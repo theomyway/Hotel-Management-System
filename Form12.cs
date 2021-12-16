@@ -14,6 +14,7 @@ namespace Hotelmanagementsystem
 {
     public partial class Form12 : Form
     {
+        SqlConnection con = Form2.connectionstring;
         public Form12()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace Hotelmanagementsystem
         public static int CustomerID; //Value in in there (CustomerID is)
        
 
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
         private void pictureBox8_Click(object sender, EventArgs e)
         {
 

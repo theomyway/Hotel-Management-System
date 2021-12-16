@@ -14,6 +14,7 @@ namespace Hotelmanagementsystem
 {
     public partial class Form16 : Form
     {
+        SqlConnection con = Form2.connectionstring;
         int HotelID = Form2.HotelID;
         string username = Form2.username;
         string hotelname = Form2.Hotelname;
@@ -28,7 +29,7 @@ namespace Hotelmanagementsystem
         int PlanRates = Form15.Plan_rates;
         int TotalDays = Form15.TotalDays;
         int MicsCharges;
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
 
         private void btnHome_MouseHover(object sender, EventArgs e)
         {

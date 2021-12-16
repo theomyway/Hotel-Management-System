@@ -642,6 +642,7 @@ namespace Hotelmanagementsystem
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1069, 98);
             this.panel5.TabIndex = 208;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // pictureBox10
             // 

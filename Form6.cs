@@ -15,11 +15,13 @@ namespace Hotelmanagementsystem
 {
     public partial class Form6 : Form
     {
+        SqlConnection con = Form2.connectionstring;
         public Form6()
         {
             InitializeComponent();
+           
         }
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
         private void button1_Click(object sender, EventArgs e)
         {
 

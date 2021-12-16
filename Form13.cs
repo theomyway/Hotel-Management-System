@@ -13,6 +13,7 @@ namespace Hotelmanagementsystem
 {
     public partial class Form13 : Form
     {
+        SqlConnection con = Form2.connectionstring;
         public Form13()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace Hotelmanagementsystem
         string username = Form2.username;
         string hotelname = Form2.Hotelname;
         public static int Employee_ID;
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+       // SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
         private void btnAddRec_Click(object sender, EventArgs e)
         {
 

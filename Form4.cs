@@ -23,7 +23,7 @@ namespace Hotelmanagementsystem
             panelLeft.Height = btnHome.Height;
             panelLeft.Top = btnHome.Top;
         }
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
         DataTable dt;
         //Data Source=DESKTOP-7MALSR5\OMAR;Initial Catalog=HotelManagementSystem;Integrated Security=True
         public int infinite;
@@ -31,6 +31,7 @@ namespace Hotelmanagementsystem
         public static int CusID;
         public static int EmpID;
         int HotelID = Form2.HotelID;
+        SqlConnection con = Form2.connectionstring;
         DateTime now = DateTime.Now;
         
        

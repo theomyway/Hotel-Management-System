@@ -14,12 +14,13 @@ namespace Hotelmanagementsystem
 {
     public partial class Form18 : Form
     {
+        SqlConnection con = Form2.connectionstring;
         public Form18()
         {
             InitializeComponent();
         }
         int HotelID = Form2.HotelID;
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
         private void btnexitform2_Click(object sender, EventArgs e)
         {
             Application.Exit();

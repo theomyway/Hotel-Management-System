@@ -14,11 +14,12 @@ namespace Hotelmanagementsystem
 {
     public partial class Form10 : Form
     {
+        SqlConnection con = Form2.connectionstring;
         public Form10()
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
         int Employee_ID;
         DataTable dt;
         string username = Form2.username;

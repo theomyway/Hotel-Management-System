@@ -14,11 +14,12 @@ namespace Hotelmanagementsystem
 {
     public partial class Form9 : Form
     {
+        SqlConnection con = Form2.connectionstring;
         public Form9()
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
 
         private void Form9_Load(object sender, EventArgs e)
         {

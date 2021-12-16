@@ -7,11 +7,12 @@ namespace Hotelmanagementsystem
 {
     public partial class Form11 : Form
     {
+        SqlConnection con = Form2.connectionstring;
         public Form11()
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
+        //SqlConnection con = new SqlConnection(@"Data Source=OMARSPC;Initial Catalog=HMS;Integrated Security=True");
         int HotelID = Form2.HotelID;
         
         string username = Form2.username;
